@@ -1,0 +1,370 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+.gridContainer {
+  display: grid;
+  background-color: #eeeeee;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 210px;
+  gap: 0px 0px;
+  grid-template-areas: "header "   "main " "footer "; }
+
+header {
+  grid-area: header; }
+
+.header {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  z-index: 1; }
+  .header h1 {
+    color: rgba(245, 245, 245, 0.925);
+    font-size: xx-small; }
+  .header .logo {
+    height: 350px;
+    width: 450px; }
+  .header .nav-item {
+    font-family: 'Nunito', sans-serif;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid coral; }
+    .header .nav-item:hover {
+      background-color: #f18826ef; }
+    .header .nav-item .nav-link {
+      font-weight: bold; }
+
+.main {
+  grid-area: main; }
+  .main .herosection {
+    background: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.418)), url(../img/hero1.jpg);
+    height: 700px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .main .herosection h2 {
+      color: white;
+      font-family: 'Nunito', sans-serif;
+      font-size: 35px;
+      padding: 70px; }
+    .main .herosection a {
+      background-color: rgba(212, 23, 54, 0.637);
+      color: #e7e0e0;
+      text-decoration: none;
+      font-family: 'Nunito', sans-serif;
+      font-size: 30px;
+      padding: 5px;
+      transition-duration: 0.7s;
+      border-radius: 7px; }
+      .main .herosection a:hover {
+        padding: 10px;
+        font-size: 40px; }
+  .main .yo {
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center; }
+    .main .yo div {
+      text-align: justify;
+      padding-right: 30px; }
+    .main .yo h2 {
+      color: black;
+      font-family: 'Nunito', sans-serif;
+      font-weight: bold;
+      font-size: 25px;
+      padding-bottom: 20px;
+      text-align: center; }
+    .main .yo p {
+      color: black;
+      font-family: 'Nunito', sans-serif;
+      font-size: 18px;
+      width: 65vw; }
+    .main .yo img {
+      width: 350px;
+      height: 300px; }
+
+/*DISCIPLINAS*/
+.disciplinas {
+  background-color: #f3c9b4; }
+  .disciplinas h1 {
+    color: #111111;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px; }
+  .disciplinas .descripcion {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .disciplinas .descripcion div {
+      border: 2px solid #F5793B;
+      padding: 15px;
+      margin: 15px;
+      box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.62);
+      -webkit-box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.62);
+      -moz-box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.62);
+      transition: 1s; }
+      .disciplinas .descripcion div h2 {
+        color: #111111;
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        padding-bottom: 5px;
+        text-align: center; }
+      .disciplinas .descripcion div p {
+        color: black;
+        font-family: 'Nunito', sans-serif;
+        font-size: 19px;
+        max-width: 400px;
+        text-align: justify; }
+      .disciplinas .descripcion div img {
+        max-height: 200px;
+        width: 400px; }
+      .disciplinas .descripcion div:hover {
+        transform: scale(1.03); }
+
+/*TRAINNING HOME*/
+.mainT {
+  text-align: center;
+  background-color: #f3c9b4; }
+
+h1 {
+  color: black;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+p {
+  color: black;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px; }
+
+h2 {
+  color: #111111;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.plataformas {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10px; }
+  .plataformas div h3 {
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .plataformas div img {
+    transition: 1.2s; }
+    .plataformas div img:hover {
+      padding: 3px;
+      border-radius: 30%;
+      background-color: darkgrey; }
+
+.fotosHome {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+  .fotosHome img {
+    width: 320px;
+    height: 320px;
+    margin: 5px;
+    margin-bottom: 20px;
+    box-shadow: 10px 11px 14px 0px rgba(0, 0, 0, 0.62);
+    -webkit-box-shadow: 10px 11px 14px 0px rgba(0, 0, 0, 0.62);
+    -moz-box-shadow: 10px 11px 14px 0px rgba(0, 0, 0, 0.62); }
+
+/*UBICACIÓN*/
+.mainU {
+  background-color: #f3c9b4; }
+  .mainU h1 {
+    text-align: center;
+    color: #111111;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  .mainU h2 {
+    text-align: center;
+    color: #111111;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 25px; }
+  .mainU .mapaycarousel {
+    display: flex;
+    justify-content: space-around; }
+    .mainU .mapaycarousel section iframe {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      box-shadow: 10px 11px 14px 0px rgba(0, 0, 0, 0.62);
+      -webkit-box-shadow: 10px 11px 14px 0px rgba(0, 0, 0, 0.62);
+      -moz-box-shadow: 10px 11px 14px 0px rgba(0, 0, 0, 0.62); }
+    .mainU .mapaycarousel .carousel div img {
+      margin-top: 21px; }
+
+/*CONTACTO*/
+.mainC {
+  background-color: #f3c9b4;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .mainC h1 {
+    text-align: center;
+    color: #111111;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 20px; }
+  .mainC h2 {
+    text-align: center;
+    color: #111111;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 25px; }
+  .mainC .formulario {
+    margin-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+    height: 450px;
+    width: 450px;
+    background-color: rgba(0, 23, 85, 0.281);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+    box-shadow: 10px 11px 14px 0px rgba(0, 0, 0, 0.62);
+    -webkit-box-shadow: 10px 11px 14px 0px rgba(0, 0, 0, 0.62);
+    -moz-box-shadow: 10px 11px 14px 0px rgba(0, 0, 0, 0.62); }
+    .mainC .formulario div {
+      padding: 5px;
+      height: 50px; }
+    .mainC .formulario input, .mainC .formulario textarea {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 7px;
+      box-sizing: border-box;
+      font-size: 17px; }
+    .mainC .formulario textarea {
+      min-height: 150px;
+      max-height: 200px;
+      max-width: 100%; }
+    .mainC .formulario #boton {
+      background-color: #3c89d1;
+      color: #ffffff;
+      padding: 10px;
+      border: none; }
+      .mainC .formulario #boton:hover {
+        cursor: pointer; }
+
+.footer {
+  grid-area: footer;
+  background-color: #c6e8e8;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 35px; }
+  .footer div {
+    display: flex;
+    flex-direction: column; }
+  .footer div a {
+    padding: 5px;
+    text-decoration: none;
+    color: #4b4a4a;
+    font-family: 'Nunito', sans-serif; }
+  .footer p {
+    color: #4b4a4a;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px; }
+
+@media screen and (max-width: 1300px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 210px;
+    grid-template-areas: "header " "main " "main " "footer "; }
+    .gridContainer .nav-item {
+      background-color: white;
+      text-align: center; }
+    .gridContainer .yo {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .gridContainer .yo div {
+        padding-right: 0; }
+    .gridContainer .descripcion div h2 {
+      width: 180px; }
+    .gridContainer .mapaycarousel {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
+
+@media screen and (max-width: 1020px) {
+  .gridContainer .herosection h2 {
+    text-align: center;
+    padding: 70px; }
+  .gridContainer .herosection div a {
+    text-align: center; } }
+
+@media screen and (max-width: 525px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "header" "main" "main" "main" "footer"; }
+    .gridContainer .logo {
+      height: 280px;
+      width: 310px; }
+    .gridContainer .yo {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .gridContainer .yo img {
+      width: 300px; }
+    .gridContainer .yo h2 {
+      text-align: center; }
+    .gridContainer .yo p {
+      width: 90vw; }
+    .gridContainer .descripcion div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5px;
+      margin: 5px;
+      box-shadow: 5px 5px 14px 0px rgba(0, 0, 0, 0.62);
+      -webkit-box-shadow: 5px 5px 14px 0px rgba(0, 0, 0, 0.62);
+      -moz-box-shadow: 5px 5px 14px 0px rgba(0, 0, 0, 0.62); }
+    .gridContainer .disciplinas div img {
+      width: 300px;
+      height: 150px; }
+    .gridContainer .disciplinas div p {
+      text-align: justify;
+      width: 300px;
+      margin-top: 10px;
+      font-size: 19px; }
+    .gridContainer .footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center; }
+      .gridContainer .footer div {
+        border-bottom: 2px solid #5bbbbb;
+        margin-bottom: 15px; }
+    .gridContainer .mainT h1, .gridContainer p {
+      margin-left: 5px;
+      margin-right: 5px; }
+    .gridContainer .mainU .mapaycarousel {
+      display: flex;
+      justify-content: space-around; }
+      .gridContainer .mainU .mapaycarousel section iframe {
+        width: 340px;
+        height: 350px; }
+    .gridContainer .mainC .formulario {
+      width: 340px; } }

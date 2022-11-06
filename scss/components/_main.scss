@@ -1,0 +1,297 @@
+@import "../base/variables";
+@import "../base/mixin";
+.main {
+    grid-area: main;
+
+
+    .herosection {
+        background: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.418)), url(../img/hero1.jpg);
+        ;
+        height: 700px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            color: nth($colores, 1);
+            font-family:   'Nunito', sans-serif;
+            font-size: 35px;
+            padding: 70px;
+            }
+        a {
+            background-color: rgba(212, 23, 54, 0.637);
+            color: rgb(231, 224, 224);
+            text-decoration: none;
+            font-family:   'Nunito', sans-serif;
+            font-size: 30px;
+            padding: 5px;
+            transition-duration: 0.7s;
+            border-radius: 7px;
+            &:hover {
+                padding: 10px;
+                font-size: 40px;
+                }
+            }
+        }
+    .yo {
+        background-color: nth($colores, 1);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        @include flex (flex , center);
+        div {
+            text-align: justify;
+            padding-right: 30px;
+        }
+        h2 {
+            color: black;
+            font-family:  'Nunito', sans-serif;
+            font-weight: bold;
+            font-size: 25px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        p {
+            color: black;
+            font-family: 'Nunito', sans-serif;
+            font-size: 18px;
+            width: 65vw;
+        }
+        img {
+            
+            width: 350px;
+            height: 300px;
+        }
+    }
+}
+
+/*DISCIPLINAS*/
+
+.disciplinas {
+    background-color: nth($colores, 3);
+    h1 {
+        color: rgb(17, 17, 17);
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    .descripcion {
+        
+        @include flex (flex, space-around);
+        flex-wrap: wrap;
+        div {
+            
+            border: 2px solid #F5793B;
+            padding: 15px;
+            margin: 15px;
+            box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.62);
+            -webkit-box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.62);
+            -moz-box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.62);
+            ;
+            transition: 1s;
+            h2 {
+                color: rgb(17, 17, 17);
+                font-family:  'Nunito', sans-serif;
+                font-weight: bold;
+                font-size: 25px;
+                padding-bottom: 5px;
+                text-align: center;}
+            p {
+                color: black;
+                font-family:   'Nunito', sans-serif;
+                font-size: 19px;
+                max-width: 400px;
+                text-align:justify;
+                }
+            img {
+                max-height: 200px;
+                width: 400px;
+                }
+            &:hover{
+                transform: scale(1.03);
+            }
+            
+        }
+    }
+}
+
+/*TRAINNING HOME*/
+
+.mainT {
+    text-align: center;
+    background-color:nth($colores, 3) ;
+        
+    }
+    h1{color: black;
+        font-family:   'Nunito', sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+    p {
+        color: black;
+        font-family:   'Nunito', sans-serif;
+        font-size: 20px;
+        
+    }
+    h2 {
+        color: rgb(17, 17, 17);
+        font-family:  'Nunito', sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .plataformas {
+        @include flex (flex, space-around);
+        padding-bottom: 10px;
+        div{
+            h3 {
+                color: black;
+                font-family:   'Nunito', sans-serif;
+                font-weight: bold;
+                font-size: 20px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            img {
+                transition: 1.2s;
+                &:hover{
+                    padding: 3px;
+                    border-radius: 30%;
+                    background-color: darkgrey;
+                }
+            }
+        }
+    }
+    .fotosHome {
+        
+        @include flex (flex, space-evenly);
+        flex-wrap: wrap;
+        img {
+            width: 320px;
+            height: 320px;
+            margin: 5px;
+            margin-bottom: 20px;
+            box-shadow: 10px 11px 14px 0px rgba(0, 0, 0, 0.62);
+            -webkit-box-shadow: 10px 11px 14px 0px rgba(0, 0, 0, 0.62);
+            -moz-box-shadow: 10px 11px 14px 0px rgba(0, 0, 0, 0.62);
+            ;
+        
+        }
+    }
+
+
+/*UBICACIÓN*/
+
+.mainU {
+    background-color:nth($colores, 3); ;
+    h1 {
+        text-align: center;
+        color: rgb(17, 17, 17);
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        padding-top:15px;
+        padding-bottom: 15px;
+    }
+    h2 {
+        text-align: center;
+        color: rgb(17, 17, 17);
+        font-family:  'Nunito', sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .mapaycarousel {
+        
+        @include flex (flex, space-around);
+        section {
+            iframe {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            box-shadow: 10px 11px 14px 0px rgba(0, 0, 0, 0.62);
+            -webkit-box-shadow: 10px 11px 14px 0px rgba(0, 0, 0, 0.62);
+            -moz-box-shadow: 10px 11px 14px 0px rgba(0, 0, 0, 0.62);
+            }
+        }
+        .carousel{
+            div{
+                img {
+                    
+                    margin-top: 21px;
+                    }
+                }
+            }
+        }
+    }
+
+/*CONTACTO*/
+
+.mainC {
+    background-color: nth($colores, 3);;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        text-align: center;
+        color: rgb(17, 17, 17);
+        font-family:  'Nunito', sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    h2 {
+        text-align: center;
+        color: rgb(17, 17, 17);
+        font-family:   'Nunito', sans-serif;
+        font-weight: bold;
+        font-size: 25px
+    }
+    .formulario {
+        margin-bottom: 20px;
+        font-family:  'Nunito', sans-serif;
+        height: 450px;
+        width: 450px;
+        background-color: rgba(0, 23, 85, 0.281);
+        padding: 10px 20px;
+        box-sizing: border-box;
+        margin-top: 20px;
+        border-radius: 7px;
+        box-shadow: 10px 11px 14px 0px rgba(0, 0, 0, 0.62);
+        -webkit-box-shadow: 10px 11px 14px 0px rgba(0, 0, 0, 0.62);
+        -moz-box-shadow: 10px 11px 14px 0px rgba(0, 0, 0, 0.62);
+        div {
+            padding: 5px;
+            height: 50px;
+        }
+        input,textarea {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 7px;
+            box-sizing: border-box;
+            font-size: 17px;
+        }
+        textarea {
+            min-height: 150px;
+            max-height: 200px;
+            max-width: 100%;
+        }
+        #boton {
+            background-color: rgb(60, 137, 209);
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            &:hover {
+                cursor: pointer;
+            }
+        
+        }
+        
+    
+    }
+    
+}

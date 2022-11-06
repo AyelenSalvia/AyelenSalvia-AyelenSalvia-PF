@@ -1,0 +1,42 @@
+@import "../base/variables";
+
+header {
+    grid-area: header ;
+}
+
+.header {
+    background-color: nth($colores, 1);
+
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+
+    h1 {
+        color: rgba(245, 245, 245, 0.925);
+        font-size: xx-small;
+    }
+
+    .logo {
+        height: 350px;
+        width: 450px;
+    }
+    
+    
+    .nav-item {
+        font-family:  'Nunito', sans-serif;
+        
+        margin: 10px;
+        border-radius: 5px;
+        border: 1px solid coral;
+
+        &:hover {
+            background-color: nth($colores, 2);
+            ;
+        }
+
+        .nav-link {
+            font-weight: bold;
+
+        }
+    }
+}

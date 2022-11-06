@@ -1,0 +1,141 @@
+@media screen and (max-width: 1300px) {
+    .gridContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto 210px;
+        grid-template-areas:
+            "header "
+            "main "
+            "main "
+            "footer ";
+
+
+        .nav-item {
+        background-color:nth($colores, 1);
+        text-align: center;
+        }
+
+
+        .yo {display: flex;
+        flex-direction: column;
+        align-items: center;
+        div {
+            
+            padding-right:0;
+            
+        }
+        
+        
+        }
+        .descripcion div h2 { 
+        width: 180px;
+        
+        }
+        .mapaycarousel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+    }
+}
+@media screen and (max-width:1020px) {
+    .gridContainer{
+
+        .herosection h2 {
+        text-align: center;
+        padding: 70px
+        }
+
+        .herosection div a {
+        text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width:525px) {
+    .gridContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+            "header"
+            "main"
+            "main"
+            "main"
+            "footer";
+
+        .logo {
+        height: 280px;
+        width: 310px;}
+        
+        .yo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+        .yo img {
+        width: 300px ;}
+
+        .yo h2 {
+        text-align: center;
+        }
+        .yo p {width: 90vw;}
+
+        .descripcion div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        margin: 5px;
+        box-shadow: 5px 5px 14px 0px rgba(0, 0, 0, 0.62);
+            -webkit-box-shadow: 5px 5px 14px 0px rgba(0, 0, 0, 0.62);
+            -moz-box-shadow: 5px 5px 14px 0px rgba(0, 0, 0, 0.62);
+        }
+    
+        .disciplinas div img {
+        width: 300px;
+        height: 150px;}
+
+        .disciplinas div p {
+        text-align: justify;
+        width: 300px;
+        margin-top: 10px;
+        font-size: 19px;
+        }
+
+        .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        div{border-bottom: 2px solid #5bbbbb;
+            margin-bottom: 15px;
+            
+            
+            
+            }
+        }
+        .mainT h1,p{
+            margin-left:5px ;
+            margin-right:5px ;}
+
+        .mainU{
+            .mapaycarousel {
+        
+                @include flex (flex, space-around);
+                section {
+                    iframe {
+                    width: 340px;
+                    height: 350px;
+                    }
+                }
+                
+            }
+        }
+    
+        .mainC{
+            .formulario{
+                width: 340px;
+            }
+        }
+    }
+
+} 
